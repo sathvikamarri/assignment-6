@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{ASSIGNMENT-6 \\ PAPOULLIS PROBLEM}  
+\author{MARRI SATHVIKA \\ AI21BTECH11020}
+\date{30th May,2022}
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+\begin{frame}{QUESTION}
+Show that if R is the correlation matrix of the random vector X : [x_1......,x_n] $and$  $R^{-1}$ is its inverse, then E[X R^{-1}X^t] = n
+\end{frame}
+
+\begin{frame}{SOLUTION}
+  If R^{-1} = \begin{bmatrix}  a_{11}.....a_{1n} \\ a_{n1}.....a_{nn}  \end{bmatrix} then \sum_{j} a_{ij} R_{ji} = 1 \\\\   
+  Hence, E[XR^{-1}X^t] = E [\sum\limits_{n}^{i=1} \sum\limits_{n}^{j=1} x_{i} a_{ij} x_{j}]\\\\
+    =\sum\limits_{n}^{i=1} \sum\limits_{n}^{j=1} a_{ij} R_{ji}\\ 
+    = \sum\limits_{i=1}^{n} 1 = n\\\\
+
+ \boxed{\therefore E[X R^{-1}X^t] = n}
+
+\end{frame}
+
+\end{document}
